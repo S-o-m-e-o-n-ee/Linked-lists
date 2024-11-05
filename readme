@@ -1,13 +1,9 @@
 Sarah Wilkinson's readme for HW5
 
-Note: I looked up what muge sort was and looked at a C implementation for using 
-murge sort on an array on Geeks for Geeks.
-
 Q1:
 
-This program inserts a new node at the beginning of a singly liked list. The 
-structure of this program is exacly the same as for the 4-16 in class 
-assignment. There are four functions in the program, including main. The main 
+This program inserts a new node at the beginning of a singly liked list. 
+There are four functions in the program, including main. The main 
 fuction is really just a place to call the other functions in the correct order.
 It collects the number of nodes and the data to be inserted into the list, 
 calls a funtion to create the list, calls a funtion to insert the data collected, 
