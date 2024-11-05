@@ -1,0 +1,66 @@
+Sarah Wilkinson's readme for HW5
+
+Note: I looked up what muge sort was and looked at a C implementation for using 
+murge sort on an array on Geeks for Geeks.
+
+Q1:
+
+This program inserts a new node at the beginning of a singly liked list. The 
+structure of this program is exacly the same as for the 4-16 in class 
+assignment. There are four functions in the program, including main. The main 
+fuction is really just a place to call the other functions in the correct order.
+It collects the number of nodes and the data to be inserted into the list, 
+calls a funtion to create the list, calls a funtion to insert the data collected, 
+and then calls a funtion to diplay the new linked list. The main fuction is also 
+where the memory used by the linked list is freed. The next function is 
+createNodeList, which creates a linked list of the size specified in an argument. 
+The first node is created manually and then a loop is used to add the following 
+nodes. Lastly, a reference to the first node in the newly created linked list is 
+returned. The insert fuction merely creates a new node, conects it to the 
+original first node and then returns a referect to this new node, now the first 
+node in the linked list. The function displayList iterates over all of the data 
+in the linked list printing it as it goes along. 
+
+Q2:
+
+This program inserts a node to the end of a singly linked list. This program also 
+reuses the sructure from the 4-16 in class assignment. As I have explained the 
+main, createNodeList, and displayList functions already in the last section, I 
+will not go over them here. The insert funtion is this program works a bit 
+differently then in the last one. Insert still creates a new node with the correct 
+data iside it, but istead of connecting this node to the first node in the linked 
+list, it iterates over the linked list to find the last node and connects the last 
+node to the new node. Everything else is only cosmetically different from Q1.
+
+Q3:
+
+This program iserts a new node into a singly linked list at any position. Again 
+this program uses the structure from the 4-16 in class assignment, so I will not 
+go over repeated functions. The insert fuction in this program takes an extra 
+argument, the position that the data should be inserted to. The insert functon 
+again creates a new node with the correct data inside it and iterates over the 
+list, but this time it stops once it reches the node in the position before where 
+the new node is to be inserted. It then stores the node that is currently in the 
+position that the new node will be in. The one nefore is then conected to the new 
+node and the new node is connected to the node that was at that possition. 
+Everything else is the same as Q1.
+
+Q4:
+
+This program deletes the first node of a linked list. This program uses the 
+structure from the 4-16 in class assignment. The insert funtion does not exist in 
+this program; instead, there is the deleteFirst function. The deleteFirst 
+function just makes the new first node the old second node and frees the memory 
+for the old first node. Everything else is mostly similar to Q1.
+
+Q5: (Extra credit)
+
+This program sorts a linked list using murge sort. This program uses the same 
+structure as the other programs, without the insert or deleteFirst functions and 
+with the sortList, murgeSort, and murge fuctions. The sortList function just 
+finds the length of the linked list and calls murgeSort with the correct 
+arguments. MurgeSort calls itself recursively and calls the murge function at 
+the correct time. Murge brings the items inside of the range included in its 
+arguments together by iterating over the liked list and the data included in the 
+two sections to put all of the data in the correct places. Everything else is the 
+same as the other programs. 
